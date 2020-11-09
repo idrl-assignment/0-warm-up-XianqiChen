@@ -1,12 +1,14 @@
-# TODO: import ...
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 def generate_random_matrix(m, n):
-    raise NotImplementedError  # TODO: 删除该行，实现该函数功能
+    return np.random.randint(2, size=(m, n))
 
 
 def save_matrix(matrix, file_name):
-    raise NotImplementedError  # TODO: 删除该行，实现该函数功能
+    plt.imshow(matrix)
+    plt.savefig(file_name)
 
 
 if __name__ == "__main__":
